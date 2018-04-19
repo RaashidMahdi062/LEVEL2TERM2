@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="gui" prefHeight="573.0" prefWidth="544.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="customer_tranporter_admin.ReceiptController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" layoutX="2.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@26648491_506003606440442_2141698237_n.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="#d35414" layoutX="179.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DORDAM.BD">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Text>
+      <Text fx:id="decoration_customer_name" layoutX="101.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Name : " wrappingWidth="289.18701171875">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="decoration_customer_contact_no" layoutX="99.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Contact No : " wrappingWidth="314.98046875">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="decoration_location" layoutX="100.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Location :" wrappingWidth="363.7646484375">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="decoration_product_name" layoutX="102.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product Name : " wrappingWidth="372.93359375">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="decoration_amount" layoutX="102.0" layoutY="322.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount : " wrappingWidth="386.91455078125">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="decoration_total_price" layoutX="102.0" layoutY="358.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Price : " wrappingWidth="386.9145565032959">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="decoration_secret_pin" fill="#1f5cb5" layoutX="142.0" layoutY="471.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SECRET PIN :" textAlignment="CENTER" wrappingWidth="279.98046892881393">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="district" layoutX="103.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="City :" wrappingWidth="353.6220703125">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="confirmbtn" layoutX="226.0" layoutY="504.0" onMouseClicked="#aded_to_cart_shop_order" prefHeight="43.0" prefWidth="111.0" stylesheets="@../successful_message/newstule.css" text="CONFIRM">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <Text fx:id="delivert" layoutX="102.0" layoutY="388.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delivery Charge :" wrappingWidth="386.9145565032959">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

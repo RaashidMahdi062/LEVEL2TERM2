@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="690.0" prefWidth="1368.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="successful_message.AdminnewController">
+   <children>
+      <JFXTabPane prefHeight="690.0" prefWidth="1368.0" stylesheets="@newstule.css">
+         <tabs>
+            <Tab text="MONITOR">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="615.0" fitWidth="1368.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../customer_tranporter_admin/ncp.jpg" />
+                           </image></ImageView>
+                        <TableView fx:id="buy_sell_history1" layoutY="16.0" prefHeight="535.0" prefWidth="1368.0">
+                           <columns>
+                              <TableColumn fx:id="supplier_name1" prefWidth="126.99996948242188" text="SUPPLIER NAME" />
+                              <TableColumn fx:id="supp_id" prefWidth="85.0" text="SUPPLIER ID" />
+                              <TableColumn fx:id="customer_name1" prefWidth="149.0" text="CUSTOMER_NAME" />
+                              <TableColumn fx:id="cust_id" prefWidth="94.0" text="CUSTOMER ID" />
+                              <TableColumn fx:id="transporter_name1" prefWidth="150.0" text="TRANSPORTER NAME" />
+                              <TableColumn fx:id="trans_id" prefWidth="107.0" text="TRANSPORTER ID" />
+                              <TableColumn fx:id="prod_name1" prefWidth="161.0" text="PRODUCT NAME" />
+                              <TableColumn fx:id="amount" prefWidth="60.0" text="AMOUNT" />
+                              <TableColumn fx:id="money1" prefWidth="107.0" text="PRICE" />
+                              <TableColumn fx:id="success1" prefWidth="45.0" text="CHECK" />
+                              <TableColumn fx:id="o_id" prefWidth="67.0" text="ORDER ID" />
+                              <TableColumn fx:id="date_see" prefWidth="142.0" text="DATE" />
+                              <TableColumn fx:id="DELIVERED_SEE" prefWidth="73.0" text="DELIVERED" />
+                           </columns>
+                        </TableView>
+                        <JFXButton layoutX="104.0" layoutY="560.0" onMouseClicked="#remove_checked" prefHeight="49.0" prefWidth="1185.0" stylesheets="@newstule.css" text="R E M O V E        C H E K E D" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="ALL REPORT">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fitHeight="617.0" fitWidth="1368.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../customer_tranporter_admin/ncp.jpg" />
+                           </image>
+                        </ImageView>
+                        <TableView fx:id="monthly_report" layoutX="386.0" layoutY="64.0" prefHeight="540.0" prefWidth="497.0">
+                           <columns>
+                              <TableColumn fx:id="SUPPLIER_NAME" prefWidth="125.0" text="SUPPLIER NAME" />
+                              <TableColumn fx:id="supplier_location" prefWidth="127.0" text="SUPPLIER LOCATION" />
+                              <TableColumn fx:id="shop_type" prefWidth="89.0" text="SHOP TYPE" />
+                              <TableColumn fx:id="due_taka" prefWidth="76.0" text="DUE TAKA" />
+                              <TableColumn fx:id="supplier_id" prefWidth="79.0" text="SUPPLIER ID" />
+                           </columns>
+                        </TableView>
+                        <Text layoutX="463.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ALL SHOP INFORMATION">
+                           <font>
+                              <Font name="Microsoft JhengHei Light" size="29.0" />
+                           </font>
+                        </Text>
+                        <TableView fx:id="customer_information" layoutX="907.0" layoutY="63.0" prefHeight="541.0" prefWidth="450.0">
+                          <columns>
+                            <TableColumn fx:id="customer_information_id" prefWidth="66.0" text="ID" />
+                            <TableColumn fx:id="customer_information_name" prefWidth="110.0" text="CUSTOMER NAME" />
+                              <TableColumn prefWidth="211.0" text="LOCATION">
+                                 <columns>
+                                    <TableColumn fx:id="customer_information_district" prefWidth="65.0" text="DISTRICT" />
+                                    <TableColumn fx:id="customer_information_road" prefWidth="110.0" text="ROAD LOCATION" />
+                                 </columns>
+                              </TableColumn>
+                              <TableColumn fx:id="customer_information_total_buy" prefWidth="97.0" text="BUY (TK)" />
+                          </columns>
+                        </TableView>
+                        <Text layoutX="922.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ALL CUSTOMER INFORMATION">
+                           <font>
+                              <Font name="Microsoft JhengHei Light" size="29.0" />
+                           </font>
+                        </Text>
+                        <TableView fx:id="taka_and_poisa" layoutX="14.0" layoutY="64.0" prefHeight="540.0" prefWidth="332.0">
+                          <columns>
+                            <TableColumn fx:id="admin_profit_month" prefWidth="73.0" text="MONTH" />
+                            <TableColumn fx:id="admin_profit_year" prefWidth="63.0" text="YEAR" />
+                              <TableColumn fx:id="admin_profit_salary" prefWidth="89.0" text="SALARY (TK)" />
+                              <TableColumn fx:id="admin_profit_id" prefWidth="106.0" text="PROFIT (TK)" />
+                          </columns>
+                        </TableView>
+                        <Text layoutX="70.0" layoutY="43.0" onMouseClicked="#taka_vau" strokeType="OUTSIDE" strokeWidth="0.0" text="PROFIT RECORD">
+                           <font>
+                              <Font name="Microsoft JhengHei Light" size="29.0" />
+                           </font>
+                        </Text>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="PRODUCT REPORT OR ADD PRODUCT">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="615.0" fitWidth="1368.0" layoutX="2.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../customer_tranporter_admin/ncp.jpg" />
+                           </image></ImageView>
+                        <TableView fx:id="PROD_TABLE" layoutX="14.0" layoutY="71.0" prefHeight="491.0" prefWidth="545.0">
+                           <columns>
+                              <TableColumn fx:id="NAME" prefWidth="154.0" text="PRODUCT NAME" />
+                              <TableColumn fx:id="BRAND" prefWidth="93.0" text="BRAND" />
+                              <TableColumn fx:id="AMOUNT" prefWidth="71.0" text="AMOUNT" />
+                              <TableColumn fx:id="CATAGORY" prefWidth="123.0" text="CATAGORY" />
+                              <TableColumn fx:id="unit_price" prefWidth="103.0" text="UNIT PRICE" />
+                           </columns>
+                        </TableView>
+                        <JFXTextField fx:id="product_name" labelFloat="true" layoutX="645.0" layoutY="185.0" prefHeight="31.0" prefWidth="653.0" promptText="NAME OF PRODUCT">
+                           <font>
+                              <Font size="15.0" />
+                           </font></JFXTextField>
+                        <JFXTextField fx:id="product_brand" labelFloat="true" layoutX="645.0" layoutY="257.0" prefHeight="25.0" prefWidth="220.0" promptText="BRAND">
+                           <font>
+                              <Font size="15.0" />
+                           </font></JFXTextField>
+                        <JFXTextField fx:id="product_warrantee" labelFloat="true" layoutX="885.0" layoutY="257.0" prefHeight="31.0" prefWidth="175.0" promptText="WARRANTEE ( YEARS )">
+                           <font>
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="product_price" labelFloat="true" layoutX="1083.0" layoutY="261.0" prefHeight="25.0" prefWidth="215.0" promptText="PRICE ( TK )">
+                           <font>
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="product_image_link" labelFloat="true" layoutX="644.0" layoutY="340.0" prefHeight="31.0" prefWidth="353.0" promptText="IMAGE LINK">
+                           <font>
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="product_description" labelFloat="true" layoutX="643.0" layoutY="420.0" prefHeight="31.0" prefWidth="661.0" promptText="PRODUCT DESCRIPTION">
+                           <font>
+                           </font>
+                        </JFXTextField>
+                        <JFXComboBox fx:id="product_catagory_combobox" labelFloat="true" layoutX="951.0" layoutY="503.0" prefHeight="25.0" prefWidth="194.0" promptText="PRODUCT CATAGORY" />
+                        <JFXButton fx:id="product_add" layoutX="1171.0" layoutY="498.0" onMouseClicked="#finally_add_product_button" ripplerFill="RED" stylesheets="@newstule.css" text="ADD PRODUCT">
+                           <font>
+                           </font>
+                        </JFXButton>
+                        <Label layoutX="806.0" layoutY="60.0" text="ADD NEW PRODUCT">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Label>
+                        <JFXDatePicker fx:id="product_release_date" layoutX="645.0" layoutY="502.0" prefHeight="28.0" prefWidth="268.0" promptText="RELEASE DATE OF PRODUCT" />
+                        <Label fx:id="result_show" layoutX="994.0" layoutY="562.0" prefHeight="50.0" prefWidth="301.0" textAlignment="RIGHT">
+                           <font>
+                              <Font size="28.0" />
+                           </font>
+                        </Label>
+                        <JFXButton layoutX="1211.0" onMouseClicked="#log_out" prefHeight="46.0" prefWidth="157.0" stylesheets="@newstule.css" text="LOG  OUT">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton layoutX="294.0" layoutY="21.0" onMouseClicked="#sellrecord" prefHeight="35.0" prefWidth="123.0" stylesheets="@newstule.css" text="SEARCH">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXTextField fx:id="searchfor" labelFloat="true" layoutX="15.0" layoutY="23.0" prefHeight="26.0" prefWidth="249.0" promptText="SEARCH">
+                           <font>
+                              <Font size="15.0" />
+                           </font></JFXTextField>
+                        <JFXTextField fx:id="new_price" labelFloat="true" layoutX="264.0" layoutY="572.0" prefHeight="26.0" prefWidth="142.0" promptText="NEW PRICE">
+                           <font>
+                              <Font size="15.0" />
+                           </font></JFXTextField>
+                        <JFXButton layoutX="419.0" layoutY="573.0" onMouseClicked="#update_new_price" prefHeight="35.0" prefWidth="127.0" stylesheets="@newstule.css" text="UPDATE PRICE">
+                           <font>
+                              <Font size="15.0" />
+                           </font></JFXButton>
+                        <JFXButton layoutX="456.0" layoutY="21.0" onMouseClicked="#refresh_product_table" prefHeight="35.0" prefWidth="103.0" stylesheets="@newstule.css" text="REFRESH">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <Text fx:id="c_product" layoutX="14.0" layoutY="597.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="232.6708984375">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <JFXTextField fx:id="product_video_link" labelFloat="true" layoutX="1036.0" layoutY="343.0" prefHeight="25.0" prefWidth="264.0" promptText="VIDEO LINK" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="OUR PEOPLE">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="615.0" fitWidth="1368.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../customer_tranporter_admin/ncp.jpg" />
+                           </image>
+                        </ImageView>
+                        <TableView fx:id="OUR_PEOPLE" layoutX="188.0" layoutY="67.0" prefHeight="548.0" prefWidth="993.0">
+                          <columns>
+                            <TableColumn fx:id="OUR_PEOPLE_NAME" prefWidth="117.0" text="NAME" />
+                            <TableColumn fx:id="OUR_PEOPLE_EMAIL" prefWidth="154.0" text="E-MAIL" />
+                              <TableColumn fx:id="OUR_PEOPLE_CONTACT_NO" prefWidth="108.0" text="CONTACT NO" />
+                              <TableColumn fx:id="OUR_PEOPLE_DISTRICT" prefWidth="88.0" text="DISTRICT" />
+                              <TableColumn fx:id="OUR_PEOPLE_ROAD_LOCATION" prefWidth="155.0" text="ROAD LOCATION" />
+                              <TableColumn fx:id="OUR_PEOPLE_NID" prefWidth="87.0" text="NATIONAL ID" />
+                              <TableColumn fx:id="OUR_PEOPLE_REGISTER_DATE" prefWidth="98.0" text="REGISTER DATE" />
+                              <TableColumn fx:id="OUR_PEOPLE_ID" prefWidth="76.0" text="ID" />
+                              <TableColumn fx:id="OUR_PEOPLE_APPROVAL" prefWidth="67.0" text="APPROVAL" />
+                              <TableColumn fx:id="OUR_PEOPLE_CHECK_BOX" prefWidth="42.0" />
+                          </columns>
+                        </TableView>
+                        <JFXHamburger fx:id="confirm_ham" layoutX="1317.0" layoutY="24.0" onMouseClicked="#confirm_pressed" />
+                        <JFXHamburger fx:id="catagory_ham" layoutX="14.0" layoutY="20.0" onMouseClicked="#catagory_selection_and_show" />
+                        <JFXDrawer fx:id="catagory_ham_drawer" defaultDrawerSize="190.0" layoutX="1.0" layoutY="69.0" prefHeight="546.0" prefWidth="181.0" />
+                        <JFXDrawer fx:id="confirm_ham_drawer" defaultDrawerSize="181.0" direction="RIGHT" layoutX="1187.0" layoutY="68.0" prefHeight="546.0" prefWidth="181.0" />
+                        <Text layoutX="1199.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="REQUESTS">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="59.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CATAGORY">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="cata_text" layoutX="550.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CUSTOMER" textAlignment="CENTER" wrappingWidth="267.8759765625">
+                           <font>
+                              <Font size="33.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+   </children>
+</AnchorPane>

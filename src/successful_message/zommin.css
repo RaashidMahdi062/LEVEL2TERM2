@@ -1,0 +1,6 @@
+.button:hover
+{
+    animated: shake;
+    -fx-scale-x: 1.15;
+    -fx-scale-y: 1.1;
+}

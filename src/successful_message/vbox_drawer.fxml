@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="546.0" prefWidth="181.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="successful_message.Vbox_drawerController">
+   <children>
+      <ImageView fitHeight="166.0" fitWidth="181.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../customer_tranporter_admin/background.png" />
+         </image>
+      </ImageView>
+      <JFXButton accessibleText="approve_all" prefHeight="131.0" prefWidth="181.0" stylesheets="@newstule.css" text="APPROVE ALL">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton accessibleText="approve_selected" prefHeight="128.0" prefWidth="181.0" stylesheets="@newstule.css" text="APPROVE SELECTED">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton accessibleText="decline_deleted" prefHeight="132.0" prefWidth="181.0" stylesheets="@newstule.css" text="DECLINE SELECTED">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+   </children>
+</VBox>

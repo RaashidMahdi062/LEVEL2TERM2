@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="709.0" prefWidth="1368.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="level2term2.FXMLDocumentController">
+    <children>
+      <ImageView fitHeight="709.0" fitWidth="1368.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@22304759-White-and-red-color-paper-shopping-bag-isolated-on-gray-background-Stock-Photo.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="loginlabel" layoutX="651.0" layoutY="128.0" text="LOG IN">
+         <font>
+            <Font name="Yu Gothic Regular" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="502.0" layoutY="6.0" text="DORDAM.BD">
+         <font>
+            <Font name="Segoe Print Bold" size="55.0" />
+         </font>
+      </Label>
+      <Label fx:id="newregister_text" layoutX="651.0" layoutY="373.0" onMouseClicked="#newregistration_initialize" text="CREATE NEW ACCOUNT?">
+         <font>
+            <Font name="Yu Gothic Regular" size="28.0" />
+         </font>
+      </Label>
+      <Text fx:id="check_it_" layoutX="1063.0" layoutY="664.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="RIGHT" wrappingWidth="290.99999901652336">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="now_ststus_" layoutX="1070.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="RIGHT" wrappingWidth="183.9999908953905">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="loginemail" labelFloat="true" layoutX="656.0" layoutY="189.0" prefHeight="31.0" prefWidth="379.0" promptText="E-MAIL">
+         <font>
+            <Font size="15.0" />
+         </font></JFXTextField>
+      <JFXPasswordField fx:id="loginpassword" labelFloat="true" layoutX="656.0" layoutY="249.0" prefHeight="31.0" prefWidth="379.0" promptText="PASSWORD">
+         <font>
+            <Font size="15.0" />
+         </font></JFXPasswordField>
+      <JFXComboBox fx:id="logincatagory" labelFloat="true" layoutX="656.0" layoutY="314.0" prefHeight="25.0" prefWidth="210.0" promptText="SELECT LOGIN CATAGORY" />
+      <JFXButton fx:id="userloginbtn" buttonType="RAISED" layoutX="908.0" layoutY="309.0" onMouseClicked="#login_check_fxml" prefHeight="35.0" prefWidth="127.0" ripplerFill="#f80000" text="LOGIN" wrapText="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <effect>
+            <Reflection bottomOpacity="0.28" fraction="1.0" topOpacity="0.44" />
+         </effect>
+         <stylesheets>
+            <URL value="@../successful_message/zommin.css" />
+            <URL value="@../successful_message/newstule.css" />
+         </stylesheets>
+      </JFXButton>
+      <JFXTextField fx:id="registername" labelFloat="true" layoutX="656.0" layoutY="436.0" prefHeight="31.0" prefWidth="379.0" promptText="YOUR NAME">
+         <font>
+            <Font size="15.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="registeremail" labelFloat="true" layoutX="656.0" layoutY="491.0" prefHeight="31.0" prefWidth="379.0" promptText="E-MAIL">
+         <font>
+            <Font size="15.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="mobile_no" labelFloat="true" layoutX="656.0" layoutY="548.0" prefHeight="31.0" prefWidth="379.0" promptText="PHONE NUMBER">
+         <font>
+            <Font size="15.0" />
+         </font></JFXTextField>
+      <JFXPasswordField fx:id="registerpassword" labelFloat="true" layoutX="656.0" layoutY="608.0" prefHeight="30.0" prefWidth="379.0" promptText="PASSWORD">
+         <font>
+            <Font size="14.0" />
+         </font></JFXPasswordField>
+      <JFXComboBox fx:id="registercatagory" labelFloat="true" layoutX="651.0" layoutY="666.0" prefHeight="25.0" prefWidth="204.0" promptText="SELECT CATAGORY" />
+      <JFXButton fx:id="registersubmitbtn" buttonType="RAISED" layoutX="874.0" layoutY="660.0" onMouseClicked="#registration" prefHeight="35.0" prefWidth="160.0" ripplerFill="#fc0000" stylesheets="@../successful_message/newstule.css" text="REGISTER">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+    </children>
+</AnchorPane>

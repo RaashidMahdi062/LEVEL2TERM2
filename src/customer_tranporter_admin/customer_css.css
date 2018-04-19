@@ -1,0 +1,19 @@
+.tab
+{
+    -fx-background-color: black;
+    -fx-pref-width : 260;
+    -fx-pref-height: 75; 
+    -fx-border-color: white;
+    -fx-border-width: 2;
+   
+}
+
+.tab:selected
+{
+    -fx-background-color : #003366;
+}
+
+.tab:hover
+{
+    -fx-background-color : #006600;
+}

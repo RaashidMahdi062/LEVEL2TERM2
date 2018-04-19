@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1368.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="successful_message.Reg_successController">
+   <children>
+      <JFXTabPane prefHeight="700.0" prefWidth="1368.0" rotateGraphic="true" stylesheets="@newstule.css">
+         <tabs>
+            <Tab text=" PLACED ORDERS ">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="647.0" fitWidth="1368.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@27455543-light-wallpapers.jpg" />
+                           </image>
+                        </ImageView>
+                        <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="484.0" layoutY="578.0" onMouseClicked="#placed_order_confirm_button" prefHeight="41.0" prefWidth="386.0" ripplerFill="#ff0505" text="SUPPLY">
+                           <font>
+                              <Font name="Webdings" size="16.0" />
+                           </font>
+
+                        </JFXButton>
+                        <Label layoutX="787.0" layoutY="13.0" prefHeight="56.0" prefWidth="300.0" text="PLACED ORDERS">
+                           <font>
+                              <Font name="Wingdings" size="38.0" />
+                           </font>
+                        </Label>
+                        <JFXButton buttonType="RAISED" layoutX="12.0" layoutY="6.0" onMouseClicked="#go_to_homepage" prefHeight="48.0" prefWidth="129.0" ripplerFill="RED" text="LOG OUT">
+                           <font>
+                              <Font name="Webdings" size="20.0" />
+                           </font>
+                        </JFXButton>
+                        <TableView fx:id="placed_orders_table" layoutX="463.0" layoutY="68.0" prefHeight="500.0" prefWidth="893.0">
+                           <columns>
+                              <TableColumn fx:id="placed_order_name" prefWidth="136.0" text="NAME" />
+                              <TableColumn fx:id="placed_order_brand" prefWidth="89.0" text="BRAND" />
+                              <TableColumn fx:id="placed_order_amount" prefWidth="62.0" text="AMOUNT" />
+                              <TableColumn fx:id="placed_order_price" prefWidth="110.0" text="PRICE" />
+                              <TableColumn fx:id="placed_order_pin" prefWidth="101.0" text="PIN" />
+                              <TableColumn fx:id="placed_order_date" prefWidth="106.0" text="DATE" />
+                              <TableColumn fx:id="trans_id" prefWidth="106.0" text="TRANSPORTER ID" />
+                              <TableColumn fx:id="placed_orders_id" prefWidth="63.0" text="ID" />
+                              <TableColumn fx:id="placed_orders_status" prefWidth="75.0" text="STATUS" />
+                              <TableColumn fx:id="placed_order_ckb" prefWidth="44.0" />
+                           </columns>
+                        </TableView>
+                        <Label fx:id="s_name" layoutX="25.0" layoutY="95.0" prefHeight="26.0" prefWidth="438.0" text="SUPPLIER NAME :">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="s_id" layoutX="24.0" layoutY="159.0" prefHeight="26.0" prefWidth="447.0" text="SUPPLIER ID :">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="shop_n" layoutX="23.0" layoutY="126.0" prefHeight="26.0" prefWidth="447.0" text="SHOP NAME :">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Text layoutX="19.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GENERAL GUIDELINE :">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="31.0" layoutY="336.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Here you can see all of your placed  orders.">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="31.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. Check 'TRANSPORTER ID' before serving any order.">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="31.0" layoutY="415.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3. Keep order PIN number safe.">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="31.0" layoutY="453.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4. Fillup your order PIN number to the Transporter. ">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="31.0" layoutY="491.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5. PRESS DONE after delivering a product to Transporter.">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="31.0" layoutY="530.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6. You will not give any charge to Transporter.">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="31.0" layoutY="564.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7. For every sell, authority will charge 10% of product price" wrappingWidth="353.2646484375">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="placed_order_successful_status" layoutX="1226.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="132.962890625">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Text>
+                        <JFXButton layoutX="962.0" layoutY="577.0" onMouseClicked="#paid_option" prefHeight="43.0" prefWidth="377.0" text="PAID">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text=" UPDATE MY STORE ">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="647.0" fitWidth="1368.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@27455543-light-wallpapers.jpg" />
+                           </image>
+                        </ImageView>
+                        <JFXButton layoutX="1177.0" layoutY="37.0" onMouseClicked="#add_new_product_to_store" prefHeight="40.0" prefWidth="118.0" text="ADD NEW">
+                           <font>
+                              <Font size="14.0" />
+                           </font></JFXButton>
+                        <JFXTextField fx:id="search_bos_update" labelFloat="true" layoutX="790.0" layoutY="38.0" prefHeight="38.0" prefWidth="226.0" promptText="SEARCH PRODUCT">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="amount_update" labelFloat="true" layoutX="892.0" layoutY="571.0" prefHeight="31.0" prefWidth="127.0" promptText="AMOUNT">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXComboBox fx:id="inc_dec_combo" labelFloat="true" layoutX="1054.0" layoutY="573.0" prefHeight="29.0" prefWidth="123.0" promptText="INC / DEC" visibleRowCount="3" />
+                        <JFXButton layoutX="1194.0" layoutY="565.0" onMouseClicked="#to_update_store_button" prefHeight="41.0" prefWidth="101.0" text="CONFIRM" underline="true">
+                           <font>
+                              <Font size="16.0" />
+                           </font></JFXButton>
+                        <TableView fx:id="update_store_table" layoutX="476.0" layoutY="85.0" prefHeight="468.0" prefWidth="820.0">
+                           <columns>
+                              <TableColumn fx:id="update_store_name" prefWidth="247.0" text="PRODUCT NAME" />
+                              <TableColumn fx:id="update_store_brand" minWidth="0.0" prefWidth="125.0" text="BRAND" />
+                              <TableColumn fx:id="update_store_amount" prefWidth="85.0" text="AMOUNT" />
+                              <TableColumn fx:id="current_price" prefWidth="154.0" text="CURRENT PRICE" />
+                              <TableColumn fx:id="update_catagory" prefWidth="120.0" text="CATAGORY" />
+                              <TableColumn fx:id="update_STOCK" prefWidth="88.0" text="STOCK" />
+                           </columns>
+                        </TableView>
+                        <Label fx:id="update_name" layoutX="480.0" layoutY="580.0" prefHeight="27.0" prefWidth="295.0" text="NAME :">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <JFXComboBox fx:id="catagory_combo_box" labelFloat="true" layoutX="596.0" layoutY="51.0" prefHeight="25.0" prefWidth="176.0" promptText="SELECT CATAGORY" />
+                        <JFXButton layoutX="1041.0" layoutY="37.0" onMouseClicked="#to_update_store_button" prefHeight="40.0" prefWidth="108.0" text="SEARCH">
+                            <font>
+                              <Font size="16.0" />
+                           </font>
+                        </JFXButton>
+                        <Label fx:id="s_name1" layoutX="31.0" layoutY="33.0" prefHeight="26.0" prefWidth="438.0" text="SUPPLIER NAME :">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="s_id1" layoutX="30.0" layoutY="97.0" prefHeight="26.0" prefWidth="447.0" text="SUPPLIER ID :">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="shop_n1" layoutX="29.0" layoutY="65.0" prefHeight="26.0" prefWidth="447.0" text="SHOP NAME :">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Text layoutX="29.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GENERAL GUIDELINE :">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="52.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Here you can see all of your PRODUCTS.">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="51.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. You can check any of your existing products by 'SEARCH' button" wrappingWidth="384.30859375">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="52.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3. You can increase or decrease your items, Procedure :-">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="91.0" layoutY="362.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-&gt; Press any product from TABLE">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="91.0" layoutY="390.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-&gt; Fillup ( AMOUNT ) and ( INC/DEC ) Field">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="91.0" layoutY="418.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-&gt; PRESS the 'CONFIRM' button">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="52.0" layoutY="463.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4. You can add new product. Procedure :-">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="98.0" layoutY="492.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-&gt; Write product name at 'SEARCH PRODUCT' or,">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <JFXButton layoutX="477.0" layoutY="46.0" onMouseClicked="#add_new_product_filter" prefHeight="35.0" prefWidth="105.0" text="FILTER">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <Text layoutX="98.0" layoutY="521.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-&gt; SELECT CATAGORY of product">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="98.0" layoutY="549.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-&gt; PRESS 'FILTER' Button">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="98.0" layoutY="575.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-&gt; Then press any product from TABLE">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="96.0" layoutY="606.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-&gt; After that, press 'ADD NEW' Button">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <JFXButton layoutX="1143.0" layoutY="289.0" onMouseClicked="#refresh_update_table" prefHeight="35.0" prefWidth="377.0" rotate="90.0" text="R E F R E S H      T A B L E">
+                           <font>
+                              <Font name="Wingdings" size="21.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text=" MY SHOP SELLS ">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="647.0" fitWidth="1368.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@27455543-light-wallpapers.jpg" />
+                           </image>
+                        </ImageView>
+                        <Text fx:id="charged_money" layoutX="592.0" layoutY="608.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DUE TAKA " wrappingWidth="423.390625">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Text>
+                        <TableView fx:id="my_sell_table" layoutX="591.0" layoutY="69.0" prefHeight="502.0" prefWidth="766.0">
+                           <columns>
+                              <TableColumn fx:id="my_sell_name" prefWidth="219.0" text="PRODUCT NAME" />
+                              <TableColumn fx:id="my_sell_brand" prefWidth="157.0" text="BRAND" />
+                              <TableColumn fx:id="my_sell_amount" prefWidth="92.0" text="AMOUNT" />
+                              <TableColumn fx:id="my_sell_price" prefWidth="138.0" text="PRICE" />
+                              <TableColumn fx:id="date_of_sell" prefWidth="159.0" text="DATE" />
+                           </columns>
+                        </TableView>
+                        <Label fx:id="s_name2" layoutX="35.0" layoutY="33.0" prefHeight="26.0" prefWidth="438.0" text="SUPPLIER NAME :">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="s_id2" layoutX="34.0" layoutY="97.0" prefHeight="26.0" prefWidth="447.0" text="SUPPLIER ID :">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="shop_n2" layoutX="33.0" layoutY="65.0" prefHeight="26.0" prefWidth="447.0" text="SHOP NAME :">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Text layoutX="29.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GENERAL GUIDELINE :">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="52.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Here you can see all of your sales.">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="52.0" layoutY="367.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. You can filter your result.">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="52.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3. It is only permitted to see the sales of 100 days at most.">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="52.0" layoutY="445.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4. 'DUE TAKA' field will show you how much money you have to pay.">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <JFXComboBox fx:id="my_shop_sells_day_range" labelFloat="true" layoutX="593.0" layoutY="26.0" prefHeight="33.0" prefWidth="221.0" promptText="DAY RANGE OF SELL" />
+                        <JFXButton layoutX="1008.0" layoutY="16.0" onMouseClicked="#my_shop_sell_filter" prefHeight="29.0" prefWidth="346.0" text="FILTER   PRODUCT">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </JFXButton>
+                        <Text fx:id="total_sell_in_range" layoutX="1028.0" layoutY="613.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TOTAL SELL :" wrappingWidth="328.6708984375">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="SETTINGS">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="647.0" fitWidth="1368.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@27455543-light-wallpapers.jpg" />
+                           </image>
+                        </ImageView>
+                        <JFXButton contentDisplay="TOP" layoutX="11.0" layoutY="7.0" onMouseClicked="#change_user_name" prefHeight="110.0" prefWidth="242.0" ripplerFill="RED" text="CHANGE USER NAME">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="66.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@unnamed%20(6).png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton contentDisplay="TOP" layoutX="10.0" layoutY="129.0" onMouseClicked="#change_shop_name" prefHeight="110.0" prefWidth="242.0" ripplerFill="RED" text="CHANGE SHOP NAME">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="61.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@unnamed%20(13).png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton contentDisplay="TOP" layoutX="10.0" layoutY="251.0" onMouseClicked="#change_contact_no" prefHeight="110.0" prefWidth="242.0" ripplerFill="#fc0000" text="CHANGE CONTACT NO">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="62.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@unnamed%20(5).png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton contentDisplay="TOP" layoutX="10.0" layoutY="374.0" onMouseClicked="#change_password" prefHeight="110.0" prefWidth="242.0" ripplerFill="RED" text="CHANGE PASSWORD">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="71.0" fitWidth="113.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@unnamed%20(4).png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton contentDisplay="TOP" layoutX="9.0" layoutY="505.0" onMouseClicked="#change_location" prefHeight="110.0" prefWidth="242.0" ripplerFill="RED" text="CHANGE SHOP LOCATION">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="62.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@unnamed%20(12).png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXTextField fx:id="new_user_name" labelFloat="true" layoutX="309.0" layoutY="52.0" prefHeight="37.0" prefWidth="360.0" promptText="NEW USER NAME">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXPasswordField fx:id="user_password" labelFloat="true" layoutX="715.0" layoutY="53.0" prefHeight="37.0" prefWidth="330.0" promptText="PASSWORD">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </JFXPasswordField>
+                        <JFXTextField fx:id="new_shop_name" labelFloat="true" layoutX="300.0" layoutY="166.0" prefHeight="37.0" prefWidth="360.0" promptText="NEW SHOP NAME">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXPasswordField fx:id="shop_passwors" labelFloat="true" layoutX="715.0" layoutY="166.0" prefHeight="37.0" prefWidth="328.0" promptText="PASSWORD">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </JFXPasswordField>
+                        <JFXTextField fx:id="new_contact_no" labelFloat="true" layoutX="300.0" layoutY="293.0" prefHeight="37.0" prefWidth="360.0" promptText="NEW CONTACT NO">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXPasswordField fx:id="contact_password" labelFloat="true" layoutX="719.0" layoutY="291.0" prefHeight="37.0" prefWidth="324.0" promptText="PASSWORD">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </JFXPasswordField>
+                        <JFXPasswordField fx:id="old_password" labelFloat="true" layoutX="300.0" layoutY="419.0" prefHeight="37.0" prefWidth="221.0" promptText="OLD PASSWORD">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </JFXPasswordField>
+                        <JFXPasswordField fx:id="new_password" labelFloat="true" layoutX="542.0" layoutY="419.0" prefHeight="37.0" prefWidth="210.0" promptText="NEW PASSWORD">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </JFXPasswordField>
+                        <JFXPasswordField fx:id="confirm_password" labelFloat="true" layoutX="776.0" layoutY="419.0" prefHeight="37.0" prefWidth="269.0" promptText="CONFIRM PASSWORD">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </JFXPasswordField>
+                        <JFXTextField fx:id="new_shop_location" labelFloat="true" layoutX="287.0" layoutY="541.0" prefHeight="37.0" prefWidth="360.0" promptText="NEW SHOP LOCATION (ROAD AND SHOP NO )">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXComboBox fx:id="new_district_combobox" layoutX="666.0" layoutY="552.0" prefHeight="25.0" prefWidth="127.0" promptText="DISTRICT" />
+                        <JFXPasswordField fx:id="location_password" labelFloat="true" layoutX="819.0" layoutY="541.0" prefHeight="37.0" prefWidth="227.0" promptText="PASSWORD">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </JFXPasswordField>
+                        <Text fx:id="settings_result" layoutX="1067.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="286.3603515625">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+         </tabs>
+         <effect>
+            <DropShadow height="255.0" radius="127.0" spread="1.0" width="255.0" />
+         </effect>
+      </JFXTabPane>
+   </children>
+</AnchorPane>

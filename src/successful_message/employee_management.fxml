@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1368.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="successful_message.Employee_managementController">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="1368.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../customer_tranporter_admin/bal.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="monthly_report" layoutX="539.0" layoutY="114.0" prefHeight="523.0" prefWidth="816.0">
+         <columns>
+            <TableColumn fx:id="SUPPLIER_NAME" prefWidth="149.0" text="SUPPLIER_NAME" />
+            <TableColumn fx:id="supplier_location" prefWidth="177.0" text="SUPPLIER_LOCATION" />
+            <TableColumn fx:id="shop_name" prefWidth="147.0" text="SHOP NAME" />
+            <TableColumn fx:id="shop_type" prefWidth="124.0" text="SHOP TYPE" />
+            <TableColumn fx:id="due_taka" prefWidth="139.0" text="DUE TAKA" />
+            <TableColumn fx:id="supplier_id" prefWidth="78.0" text="SUPPLIER ID" />
+         </columns>
+      </TableView>
+      <JFXTextField fx:id="paying" labelFloat="true" layoutX="841.0" layoutY="647.0" prefHeight="31.0" prefWidth="212.0" promptText="PAY MONEY ( TK )">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton layoutX="1118.0" layoutY="642.0" onMouseClicked="#payingoperation" prefHeight="41.0" prefWidth="237.0" stylesheets="@newstule.css" text="PAY">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="sid" layoutX="539.0" layoutY="649.0" prefHeight="27.0" prefWidth="247.0" text="SUPPLIER ID :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Text layoutX="775.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ALL SHOP INFORMATION">
+         <font>
+            <Font name="Microsoft JhengHei Light" size="29.0" />
+         </font>
+      </Text>
+      <Text fx:id="empname" layoutX="23.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NAME : " wrappingWidth="378.23046875">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="empid" layoutX="25.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID : " wrappingWidth="378.23046875">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="datefield" layoutX="25.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DATE : " wrappingWidth="378.23046875">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#b53535" layoutX="79.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DORDAM BD" wrappingWidth="363.00001686811447">
+         <font>
+            <Font name="Broadway" size="51.0" />
+         </font>
+      </Text>
+      <JFXButton layoutX="1206.0" layoutY="14.0" onMouseClicked="#log_out" prefHeight="52.0" prefWidth="148.0" stylesheets="@newstule.css" text="LOG  OUT">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </JFXButton>
+      <Text layoutX="26.0" layoutY="359.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GENERAL GUIDELINE :">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Text layoutX="38.0" layoutY="412.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. First select a supplier from the table.">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="38.0" layoutY="450.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. Then write amount of money.">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="38.0" layoutY="491.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3. Then press the PAY button.">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="38.0" layoutY="533.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4. You should follow this process after receiving money.">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

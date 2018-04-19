@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane id="AnchorPane" prefHeight="591.0" prefWidth="1259.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="level2term2.CUSTOMERUIController">
+   <children>
+      <ImageView layoutX="262.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="262.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@depositphotos_18309997-stock-photo-abstract-background-of-gray-color.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="1261.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Advertisement" />
+      <Text fill="#d75214" layoutX="447.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Name : " wrappingWidth="433.8076171875">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <TabPane layoutX="262.0" layoutY="62.0" prefHeight="588.0" prefWidth="958.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Search Product">
+            <content>
+              <AnchorPane prefHeight="559.0" prefWidth="968.0">
+                     <children>
+                        <TextField layoutX="74.0" layoutY="28.0" prefHeight="37.0" prefWidth="353.0" promptText="Search product By Name" style="-fx-background-radius: 15;" />
+                        <ComboBox layoutX="435.0" layoutY="28.0" prefHeight="37.0" prefWidth="106.0" promptText="Price Range" />
+                        <Button layoutX="551.0" layoutY="28.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="77.0" text="Search" textFill="#cf651b">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <ImageView fitHeight="29.0" fitWidth="324.0" layoutX="291.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@borderup.PNG" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="325.0" fitWidth="27.0" layoutX="589.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@border%20side.PNG" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="332.0" fitWidth="26.0" layoutX="291.0" layoutY="122.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@border%20side.PNG" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="22.0" fitWidth="323.0" layoutX="291.0" layoutY="434.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@borderup.PNG" />
+                           </image>
+                        </ImageView>
+                        <Text fill="#d7420c" layoutX="14.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Available products Related Search">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#d13613" layoutX="711.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product Image">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Text>
+                        <Button layoutX="819.0" layoutY="416.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="119.0" text="Add To Cart" textFill="#c63d10">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                        <Text fill="#c3380a" layoutX="338.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selected Product Description : ">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="338.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name : " wrappingWidth="229.869140625">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="338.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Brand : " wrappingWidth="209.6708984375">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="337.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price : " wrappingWidth="242.13671875">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="337.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Warranty :" wrappingWidth="196.8955078125">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="336.0" layoutY="343.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Release-Date : " wrappingWidth="233.67919921875">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="334.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="About It : " wrappingWidth="249.5078125">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Text>
+                        <TableView layoutX="14.0" layoutY="124.0" prefHeight="328.0" prefWidth="262.0">
+                          <columns>
+                            <TableColumn prefWidth="98.0" text="Name" />
+                            <TableColumn minWidth="0.0" prefWidth="72.0" text="Brand" />
+                              <TableColumn prefWidth="91.0" text="Price" />
+                          </columns>
+                        </TableView>
+                        <WebView layoutX="632.0" layoutY="123.0" prefHeight="272.0" prefWidth="306.0" />
+                        <TextField layoutX="632.0" layoutY="416.0" prefHeight="37.0" prefWidth="173.0" promptText="Amount Order" style="-fx-background-radius: 15;">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Finalize Your Order">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="101.0" fitWidth="122.0" layoutX="119.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Cart.PNG" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="99.0" fitWidth="144.0" layoutX="368.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Cart.PNG" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="99.0" fitWidth="144.0" layoutX="611.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Cart.PNG" />
+                           </image>
+                        </ImageView>
+                        <TableView layoutX="14.0" layoutY="223.0" prefHeight="200.0" prefWidth="412.0">
+                          <columns>
+                            <TableColumn prefWidth="125.0" text="Shop Name" />
+                            <TableColumn prefWidth="282.0" text="Shop Location" />
+                          </columns>
+                        </TableView>
+                        <Text fill="#bf3a0b" layoutX="150.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Available In ">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <Button layoutX="630.0" layoutY="468.0" mnemonicParsing="false" text="Order Product" textFill="#c94f16">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                        <TableView layoutX="546.0" layoutY="215.0" prefHeight="211.0" prefWidth="255.0">
+                          <columns>
+                            <TableColumn prefWidth="96.0" text="Product Name" />
+                            <TableColumn prefWidth="77.99996948242188" text="Pin" />
+                          </columns>
+                        </TableView>
+                        <Text fill="#cc4014" layoutX="570.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Ordered Products :">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Text>
+                        <Button layoutX="151.0" layoutY="464.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="105.0" text="Select Shop" textFill="#c44818">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <ImageView fitHeight="650.0" fitWidth="263.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@newpic.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="24.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DORDAM BD">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Text>
+      <Text layoutX="57.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Added to Cart :">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <TableView layoutY="167.0" prefHeight="222.0" prefWidth="263.0">
+        <columns>
+          <TableColumn prefWidth="129.0" text="Product Name" />
+          <TableColumn prefWidth="132.0" text="Amount" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
